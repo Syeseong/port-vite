@@ -3,6 +3,7 @@ export function menu() {
     const headerNav = document.querySelector(".header__nav");
 
     if (headerToggle) {
+        // headerToggle이 있어야만 실행 되도록 해줌, 오류방지
         headerToggle.addEventListener("click", () => {
             headerNav.classList.toggle("show");
 
