@@ -1,3 +1,134 @@
 #portfolio {
-    height: 3000px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.port__inner {
+    padding: 16px;
+}
+
+.port__title {
+    position: sticky;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 5vw;
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.6;
+    font-family: var(--mainKor-font);
+    text-transform: uppercase;
+    color: var(--black100);
+    border-bottom: 0.4vw solid var(--black100);
+    background-color: var(--mainBg-color);
+    z-index: 999;
+    margin-bottom: 30px;
+}
+
+.port__title em {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.port__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 6000px;
+}
+
+.port__item {
+    margin-top: 30px;
+    width: 500px;
+    height: 70vw;
+    background-color: var(--subBg100);
+    padding: 2.5rem;
+    margin-right: 20px;
+}
+
+.prot__item__box {
+    height: 650px;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.port__item .num {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-size: 2rem;
+    font-family: var(--mainNum-font);
+}
+
+.port__item .img {
+    display: block;
+    margin-top: -10px;
+    transition: 0.3s;
+}
+
+.port__item:hover .img {
+    margin-top: 0;
+}
+
+.port__item .img img {
+    border-radius: 10px;
+    filter: saturate(0%);
+    transition: 0.3s;
+}
+
+.port__item .img:hover img {
+    filter: saturate(100%);
+}
+
+.port__item .title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 700;
+    color: var(--black100);
+    border-bottom: 2px solid var(--black100);
+    margin-bottom: 1rem;
+}
+
+.port__item .desc {}
+
+.port__item .site {
+    border: 1px solid var(--black100);
+    display: block;
+    text-align: center;
+    padding: 0.625rem 1.5rem;
+    position: absolute;
+    width: calc(500px - 3rem);
+    bottom: 0.625rem;
+}
+
+
+@media (max-width: 800px) {
+
+    .port__item .site {
+        width: calc(400px - 3rem);
+        bottom: 0px;
+    }
+
+    .prot__item__box {
+        height: 400px;
+    }
+
+    .port__item .desc {
+        display: none;
+    }
+
+    .port__item {
+        width: 400px;
+        height: auto;
+    }
+
+    .port__title {
+        width: 100%;
+        font-size: 30px;
+        height: auto;
+        top: 68px;
+        z-index: 1000;
+        background-color: var(--mainBg-color);
+
+    }
 }
