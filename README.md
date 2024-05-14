@@ -1,7 +1,7 @@
 # 포트폴리오 사이트 만들기 프로젝트
 
 ## 완성작 보기 
-미리보기 : 
+미리보기 : https://export-vite.netlify.app/
 
 ## 사용 스택
 - vite(https://ko.vitejs.dev/) 를 사용하여 사이트를 번들링하고 관리합니다.
